@@ -1,0 +1,27 @@
+@use '../mixins' as mxn;
+
+
+.header {
+
+  width: 100%;
+  // border: 1px solid red;
+  @include mxn.flex-center(row, 10px);
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.06);
+
+  >img {
+    width: 43px;
+    height: 52px;
+    gap: 0px;
+    opacity: 0px;
+  }
+
+  >h1 {
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 60px;
+    letter-spacing: -0.05em;
+    // text-underline-position: from-font;
+    // text-decoration-skip-ink: none;
+  }
+}
